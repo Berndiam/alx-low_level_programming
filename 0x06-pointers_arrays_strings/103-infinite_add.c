@@ -44,8 +44,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		v++;
 	while (*(n2 + d) != '\0')
 		d++;
-		v--;
-		d--;
+	v--;
+	d--;
 	if (d >= size_r || v >= size_r)
 		return (0);
 	while (d >= 0 || v >= 0 || overflow == 1)
